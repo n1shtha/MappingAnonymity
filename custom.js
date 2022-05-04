@@ -23,7 +23,7 @@ map.on('load', () => {
 
   //to reduce clutter, the steps for creating a legend, slider, and menu have all been turned into functions.
   createLegend()
-
+  createSlider()
 });
 
 // //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
@@ -64,6 +64,33 @@ function createLegend() {
     legend.appendChild(item);
   }
   //LEGEND CODE
+  
+  function createSlider() {
+  //Set the initial view at the first value. In this case, 1 for Pre-Partition.
+  map.setFilter('temporality-count', ['==', ['number', ['get', 'temporal_sequence']], 1]);
+  document.getElementById('active-temporality').innerText = 'Pre-Partition (before 1947-08-14)'
+  map.setLayoutProperty('temporality-count', 'visibility', 'none')
+
+  //Create event listener to catch whenever the slider is moved.
+  document.getElementById('slider').addEventListener('input', function(e) {
+    //get the value of the movement.
+    var step = parseInt(e.target.value, 10);
+
+    //These labels were created to populate the active temporality label. Change them if you are going with your own string sequence.
+    var label = ['Pre-Partition (before 1947-08-14)',
+      'Partition (1947-08-15 - 1948-02-28)',
+      'Post-Partition (1948-03-01 - 1971-12-16)',
+      'Long Partition (after 1971-12-16)',
+      'Indeterminable'
+    ]
+
+    //This is the filter function, it relies on the layer name, the comparison operator (==), the first value which it grabs with the get, temporal sequence function, and then the thing being compared against (step), or the step in the sequence of the slider.
+
+    map.setFilter('temporality-count', ['==', ['number', ['get', 'temporal_sequence']], step]);
+    //This sets the label above the slider to the period value.
+    document.getElementById('active-temporality').innerText = label[step - 1] //+ ampm;
+  })
+}
 
 
 }
