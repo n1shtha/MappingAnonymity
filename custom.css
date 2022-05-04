@@ -42,6 +42,7 @@ width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    width: 50%;
 }
 
 .map-overlay {
@@ -53,6 +54,7 @@ width: 100%;
   font: bold 16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   overflow: auto;
   border-radius: 3px;
+  width: 50%;
 }
 
 #map {
