@@ -1,7 +1,7 @@
 // JavaScript for enabling the map on load. Change the access token and the web page.
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoibmlzaHRoYWRhcyIsImEiOiJjbDF3NXd0NzcxNXN6M2lxdmZ5ZTlibHg4In0.yzzogggdKJ1aNaST6hbUcg";
+  "pk.eyJ1IjoiaWxhbWFuaXNoIiwiYSI6ImNsMXQ4eDliMzB6N3kzb3FxbzY3ZmN5bDYifQ.swLACYH2fKaTe93_6hQ5sg";
 
 window.onload = function () {
   const map = new mapboxgl.Map({
