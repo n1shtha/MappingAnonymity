@@ -71,6 +71,7 @@ width: 50%;
 margin-left: 50%;
 font-family: sans-serif;
 overflow-y: scroll;
+height: 100%;
 background-color: #fafafa;
 }
 
