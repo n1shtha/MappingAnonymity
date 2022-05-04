@@ -92,9 +92,6 @@ function createLegend() {
   })
 }
 
-
-}
-
 const chapters = {
 'part_1': {
 bearing:0,
