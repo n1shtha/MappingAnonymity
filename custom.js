@@ -161,4 +161,5 @@ setActiveChapter(chapterName);
 break;
 }
 }
+}
 };
