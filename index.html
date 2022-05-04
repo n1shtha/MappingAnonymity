@@ -16,13 +16,25 @@
   <style>
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
   </style>
-  <link href='custom.css' rel='stylesheet' />
 </head>
 
 <body>
   <!-- This is where your map goes -->
 
 <div id='map'></div>
+  
+<!-- This creates space for the legend -->
+<div class='map-overlay' id='legend'></div>
+  
+<!-- This creates space for the slider -->
+<div id='console'>
+  <h3>Timeline for Partition Texts</h3>
+  <p>Slide through the periods to see what locations are written about. </p>
+  <div class='session' id='sliderbar'>
+  <h5>Period: <label id='active-temporality'></label></h5>
+  <input id='slider' class='row' type='range' min='1' max='5' step='1' value='1' />
+</div>
+</div> 
   
 <div id="features">
   <section id="part_1" class="active">
@@ -47,7 +59,6 @@
     <h3>Part 4</h3>
     <p>
      Change the speed of flight to another location with speed variable.  Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable. Change the speed of flight to another location with speed variable.
-
     </p>
   </section>
   <section id="part_5">
@@ -72,20 +83,7 @@
   </section>
 
 </div>
-
-<!-- This creates space for the legend -->
-<div class='map-overlay' id='legend'></div>
   
-<!-- This creates space for the slider -->
-<div id='console'>
-  <h3>Timeline for Partition Texts</h3>
-  <p>Slide through the periods to see what locations are written about. </p>
-  <div class='session' id='sliderbar'>
-  <h5>Period: <label id='active-temporality'></label></h5>
-  <input id='slider' class='row' type='range' min='1' max='5' step='1' value='1' />
-</div>
-</div> 
-
 <script src='custom.js'></script>
 
 </body>
