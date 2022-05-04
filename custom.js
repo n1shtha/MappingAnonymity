@@ -67,7 +67,7 @@ function createLegend() {
   
   function createSlider() {
   //Set the initial view at the first value. In this case, 1 for Pre-Partition.
-  map.setFilter('temporality_count_sequence_number', ['==', ['temporal_sequece', ['get', 'temporal_sequence']], 1]);
+  map.setFilter('temporality_count_sequence_number', ['==', ['temporal_sequece', ['get', 'count']], 1]);
   document.getElementById('temporality').innerText = '1 Pre-Partition (before 1947-08-14)'
   map.setLayoutProperty('temporality_count_sequence_number', 'visibility', 'none')
 
@@ -86,9 +86,9 @@ function createLegend() {
 
     //This is the filter function, it relies on the layer name, the comparison operator (==), the first value which it grabs with the get, temporal sequence function, and then the thing being compared against (step), or the step in the sequence of the slider.
 
-    map.setFilter('temporality_count', ['==', ['temporal_sequence', ['get', 'temporal_sequence']], step]);
-    //This sets the label above the slider to the period value.
-    document.getElementById('temporality').innerText = label[step - 1] //+ ampm;
+//     map.setFilter('temporality_count', ['==', ['temporal_sequence', ['get', 'temporal_sequence']], step]);
+//     //This sets the label above the slider to the period value.
+//     document.getElementById('temporality').innerText = label[step - 1] //+ ampm;
   })
 }
 
