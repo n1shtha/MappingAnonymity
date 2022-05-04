@@ -16,27 +16,27 @@ const map = new mapboxgl.Map({
 map.on('load', () => {
   //Hide all presentation layers
   //This demo uses three specific layers. I want to hide them initially so I can reveal them piece meal.
-  map.setLayoutProperty('final_percentage_unknown', 'visibility', 'none');
+//   map.setLayoutProperty('final_percentage_unknown', 'visibility', 'none');
 
 //Hide the legend, slider, and infobox on first load. Obviously delete these lines if you want them visible from the start.
-document.getElementById('legend').style.display = 'none';
+// document.getElementById('legend').style.display = 'none';
 
   //to reduce clutter, the steps for creating a legend, slider, and menu have all been turned into functions.
   createLegend()
 
 });
 
-//This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
+// //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
 
-map.on('idle', () => {
+// map.on('idle', () => {
 
-  var toggleableLayerIds = ['final_percentage_unknown'];
+//   var toggleableLayerIds = ['final_percentage_unknown'];
 
-  for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
-    var visibility = map.getLayoutProperty(id, 'visibility');
-  }
-});
+//   for (var i = 0; i < toggleableLayerIds.length; i++) {
+//     var id = toggleableLayerIds[i];
+//     var visibility = map.getLayoutProperty(id, 'visibility');
+//   }
+// });
 
 function createLegend() {
   //LEGEND TEXT
