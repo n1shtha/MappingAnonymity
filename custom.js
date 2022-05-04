@@ -85,10 +85,10 @@ function createLegend() {
     ]
 
     //This is the filter function, it relies on the layer name, the comparison operator (==), the first value which it grabs with the get, temporal sequence function, and then the thing being compared against (step), or the step in the sequence of the slider.
-
-//     map.setFilter('temporality_count', ['==', ['temporal_sequence', ['get', 'temporal_sequence']], step]);
-//     //This sets the label above the slider to the period value.
-//     document.getElementById('temporality').innerText = label[step - 1] //+ ampm;
+    
+     map.setFilter('temporality_count', ['==', ['temporal_sequence', ['get', 'temporal_sequence']], step]);
+     //This sets the label above the slider to the period value.
+     document.getElementById('temporality').innerText = label[step - 1] // + ampm;
   })
 }
 
