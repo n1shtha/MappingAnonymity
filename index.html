@@ -13,12 +13,32 @@
 
   <link href='custom.css' rel='stylesheet' />
   <!-- Be sure to set the API key and layer style in the JS file -->
-  <script src='custom.js'></script>
+
 </head>
 
 <body>
   <!-- This is where your map goes -->
+
 <div id='map'></div>
+
+<!-- This creates space for the legend -->
+<div class='map-overlay' id='legend'></div>
+<!-- INFOBOX - Comment out to delete -->
+<div class='map-overlay' id='infobox'><h3>Infobox</h3><div id='infobox_content'><p>Hover over a point </p></div></div>
+
+<nav id="menu"></nav>
+
+<!-- This creates space for the slider -->
+<div id='console'>
+  <h3>Timeline for Partition Texts</h3>
+  <p>Slide through the periods to see what locations are written about. </p>
+  <div class='session' id='sliderbar'>
+  <h5>Period: <label id='active-temporality'></label></h5>
+  <input id='slider' class='row' type='range' min='1' max='5' step='1' value='1' />
+</div>
+</div>
+
+<script src='custom.js'></script>
 
 </body>
 
