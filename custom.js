@@ -63,6 +63,7 @@ function createLegend() {
     item.appendChild(value);
     legend.appendChild(item);
   }
+}
   //LEGEND CODE
   
   function createSlider() {
