@@ -18,19 +18,19 @@ map.on("load", () => {
   //Hide all presentation layers
   //This demo uses three specific layers. I want to hide them initially so I can reveal them piece meal.
   //map.setLayoutProperty("final_percentage_unknown", "visibility", "none");
-  map.setLayoutProperty("male_final_percentage_unknown", "visibility", "none");
+  map.setLayoutProperty("Percentage of Unknown Male Characters", "visibility", "none");
   map.setLayoutProperty(
-    "female_final_percentage_unknown",
+    "Percentage of Unknown Female Characters",
     "visibility",
     "none"
   );
   map.setLayoutProperty(
-    "priv_female_final_percentage_unknown",
+    "Percentage of Unknown Female Characters in Private Spaces",
     "visibility",
     "none"
   );
   map.setLayoutProperty(
-    "pub_female_final_percentage_unknown",
+    "Percentage of Unknown Female Characters in Public Spaces",
     "visibility",
     "none"
   );
@@ -48,10 +48,10 @@ function createMenu() {
   // MENU For selecting layers
   // Read in all the layers you want to toggle
   var toggleableLayerIds = [
-    "male_final_percentage_unknown",
-    "female_final_percentage_unknown",
-    "priv_female_final_percentage_unknown",
-    "pub_female_final_percentage_unknown",
+    "Percentage of Unknown Male Characters",
+    "Percentage of Unknown Female Characters",
+    "Percentage of Unknown Female Characters in Private Spaces",
+    "Percentage of Unknown Female Characters in Public Spaces",
   ];
 
   //These are the names for the layers that will appear on the menu
