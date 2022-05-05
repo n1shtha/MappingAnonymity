@@ -262,7 +262,7 @@ const chapters = {
   part_1: {
     bearing: 0,
     center: [77.0688997, 28.5272803],
-    zoom: 3,
+    zoom: 1,
     pitch: 0,
   },
   part_2: {
@@ -298,6 +298,18 @@ const chapters = {
     bearing: 25,
     center: [77.0688997, 28.5272803],
     zoom: 7,
+  },
+  part_7: {
+    bearing: 0,
+    center: [77.0688997, 28.5272803],
+    zoom: 3,
+    pitch: 0,
+  },
+  part_8: {
+    bearing: 0,
+    center: [77.0688997, 28.5272803],
+    zoom: 3,
+    pitch: 0,
   },
 };
 
