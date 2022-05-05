@@ -59,11 +59,11 @@ width: 100%;
 }
 
 #map {
-  position: sticky;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 50%;
-  margin-right: 50%;
+  // margin-right: 50%;
 }
 
 #features {
@@ -92,7 +92,6 @@ height: 100%;
 section:last-child {
 border-bottom: none;
 margin-bottom: 400px;
-visibility: hidden;
 }
 
 #console {
