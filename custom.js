@@ -281,14 +281,14 @@ const chapters = {
   },
   part_4: {
     bearing: 45,
-    center: [74.8736788, 31.6343083],
+    center: [72.8054, 18.9629],
     zoom: 14,
     pitch: 65,
     speed: 0.5,
   },
   part_5: {
     bearing: 180,
-    center: [77.1835, 28.6239],
+    center: [76.50, 30.43],
     zoom: 11,
     pitch: 10,
     speed: 1,
