@@ -46,14 +46,14 @@ width: 100%;
 }
 
 .map-overlay {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.75);
   margin: 10px;
   font: bold 16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  overflow-x: scroll;
-  overflow-y: scroll;
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
   border-radius: 3px;
   width: 50%;
 }
