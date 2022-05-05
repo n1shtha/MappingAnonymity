@@ -52,8 +52,6 @@ width: 100%;
   background: rgba(255, 255, 255, 0.75);
   margin: 10px;
   font: bold 16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  /* overflow-x: scroll; */
-  /* overflow-y: scroll; */
   border-radius: 3px;
   width: 50%;
 }
@@ -63,7 +61,6 @@ width: 100%;
   top: 0;
   bottom: 0;
   width: 50%;
-  // margin-right: 50%;
 }
 
 #features {
@@ -104,7 +101,7 @@ margin-bottom: 400px;
 }
 
 #slider {
-  width: 200px
+  width: 150px
 }
 
 #legend {
@@ -113,6 +110,7 @@ margin-bottom: 400px;
   line-height: 18px;
   height: auto;
   margin-bottom: 40px;
+  margin-left: 40px;
   width: 100px;
   font: 18px/24px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
