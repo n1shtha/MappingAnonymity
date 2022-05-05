@@ -229,6 +229,7 @@ const chapters = {
     pitch: 0,
   },
   part_2: {
+    layer: "pub_female_final_percentage_unknown"
     duration: 7000,
     center: [74.3141829, 31.5656822],
     bearing: 0,
