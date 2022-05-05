@@ -18,7 +18,11 @@ map.on("load", () => {
   //Hide all presentation layers
   //This demo uses three specific layers. I want to hide them initially so I can reveal them piece meal.
   //map.setLayoutProperty("Percentage of Unknown Characters", "visibility", "none");
-  map.setLayoutProperty("Percentage of Unknown Male Characters", "visibility", "none");
+  map.setLayoutProperty(
+    "Percentage of Unknown Male Characters",
+    "visibility",
+    "none"
+  );
   map.setLayoutProperty(
     "Percentage of Unknown Female Characters",
     "visibility",
@@ -96,61 +100,94 @@ function createMenu() {
 // //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
 
 map.on("idle", () => {
-   var toggleableLayerIds = [
-     "Percentage of Unknown Male Characters", "Percentage of Unknown Female Characters",
-     "Percentage of Unknown Female Characters in Private Spaces",
-     "Percentage of Unknown Female Characters in Public Spaces",
-   ];
+  var toggleableLayerIds = [
+    "Percentage of Unknown Male Characters",
+    "Percentage of Unknown Female Characters",
+    "Percentage of Unknown Female Characters in Private Spaces",
+    "Percentage of Unknown Female Characters in Public Spaces",
+  ];
 
-   for (var i = 0; i < toggleableLayerIds.length; i++) {
-     var id = toggleableLayerIds[i];
-     var visibility = map.getLayoutProperty(id, "visibility");
-     if (id == "Percentage of Unknown Male Characters" && visibility === "none") {
-       document.getElementById("Percentage of Unknown Male Characters").style.display =
-         "none";
-     } else if (
-       id == "Percentage of Unknown Male Characters" &&
-       visibility === "visible"
-     ) {
-       document.getElementById("Percentage of Unknown Male Characters").style.display =
-         "initial";
-     }
-     if (id == "Percentage of Unknown Female Characters" && visibility === "none") {
-       document.getElementById("Percentage of Unknown Female Characters").style.display =
-         "none";
-     } else if (
-       id == "Percentage of Unknown Female Characters" &&
-       visibility === "visible"
-     ) {
-       document.getElementById("Percentage of Unknown Female Characters").style.display =
-         "initial";
-     }
-     if (id == "Percentage of Unknown Female Characters in Private Spaces" && visibility === "none") {
-       document.getElementById(
-         "Percentage of Unknown Female Characters in Private Spaces"
-       ).style.display = "none";
-     } else if (
-       id == "Percentage of Unknown Female Characters in Private Spaces" &&
-       visibility === "visible"
-     ) {
-       document.getElementById(
-         "Percentage of Unknown Female Characters in Private Spaces"
-       ).style.display = "initial";
-     }
-     if (id == "Percentage of Unknown Female Characters in Public Spaces" && visibility === "none") {
-       document.getElementById(
-         "Percentage of Unknown Female Characters in Public Spaces"
-       ).style.display = "none";
-     } else if (
-       id == "Percentage of Unknown Female Characters in Public Spaces" &&
-       visibility === "visible"
-     ) {
-       document.getElementById(
-         "Percentage of Unknown Female Characters in Public Spaces"
-       ).style.display = "initial";
-     }
-   }
- });
+  for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+    var visibility = map.getLayoutProperty(id, "visibility");
+    if (
+      id == "Percentage of Unknown Male Characters" &&
+      visibility === "none"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Male Characters",
+        "visibility",
+        "visible"
+      );
+    } else if (
+      id == "Percentage of Unknown Male Characters" &&
+      visibility === "visible"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Male Characters",
+        "visibility",
+        "none"
+      );
+    }
+    if (
+      id == "Percentage of Unknown Female Characters" &&
+      visibility === "none"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters",
+        "visibility",
+        "visible"
+      );
+    } else if (
+      id == "Percentage of Unknown Female Characters" &&
+      visibility === "visible"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters",
+        "visibility",
+        "none"
+      );
+    }
+    if (
+      id == "Percentage of Unknown Female Characters in Private Spaces" &&
+      visibility === "none"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters in Private Spaces",
+        "visibility",
+        "visible"
+      );
+    } else if (
+      id == "Percentage of Unknown Female Characters in Private Spaces" &&
+      visibility === "visible"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters in Private Spaces",
+        "visibility",
+        "none"
+      );
+    }
+    if (
+      id == "Percentage of Unknown Female Characters in Public Spaces" &&
+      visibility === "none"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters in Public Spaces",
+        "visibility",
+        "visible"
+      );
+    } else if (
+      id == "Percentage of Unknown Female Characters in Public Spaces" &&
+      visibility === "visible"
+    ) {
+      map.setLayoutProperty(
+        "Percentage of Unknown Female Characters in Public Spaces",
+        "visibility",
+        "none"
+      );
+    }
+  }
+});
 
 function createLegend() {
   //LEGEND TEXT
