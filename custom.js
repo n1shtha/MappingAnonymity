@@ -97,7 +97,7 @@ function createMenu() {
 
 map.on("idle", () => {
   var toggleableLayerIds = [
-    "male_final_percentage_unknown, female_final_percentage_unknown",
+    "male_final_percentage_unknown", "female_final_percentage_unknown",
     "priv_female_final_percentage_unknown",
     "pub_female_final_percentage_unknown",
   ];
