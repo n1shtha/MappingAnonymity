@@ -98,8 +98,8 @@ function createMenu() {
 map.on("idle", () => {
    var toggleableLayerIds = [
      "Percentage of Unknown Male Characters", "Percentage of Unknown Female Characters",
-     "priv_female_final_percentage_unknown",
-     "pub_female_final_percentage_unknown",
+     "Percentage of Unknown Female Characters in Private Spaces",
+     "Percentage of Unknown Female Characters in Public Spaces",
    ];
 
    for (var i = 0; i < toggleableLayerIds.length; i++) {
