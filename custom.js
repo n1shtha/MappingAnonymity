@@ -280,14 +280,14 @@ const chapters = {
   part_4: {
     bearing: 0,
     center: [72.8054, 18.9629],
-    zoom: 7,
-    speed: 0.5,
+    zoom: 11,
+    speed: 1,
   },
   part_5: {
     bearing: 0,
     center: [76.50, 30.43],
-    zoom: 7,
-    speed: 0.5,
+    zoom: 11,
+    speed: 1,
   },
   part_6: {
     bearing: 0,
