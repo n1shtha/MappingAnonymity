@@ -95,62 +95,62 @@ function createMenu() {
 
 // //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
 
-map.on("idle", () => {
-  var toggleableLayerIds = [
-    "male_final_percentage_unknown", "female_final_percentage_unknown",
-    "priv_female_final_percentage_unknown",
-    "pub_female_final_percentage_unknown",
-  ];
+// map.on("idle", () => {
+//   var toggleableLayerIds = [
+//     "male_final_percentage_unknown", "female_final_percentage_unknown",
+//     "priv_female_final_percentage_unknown",
+//     "pub_female_final_percentage_unknown",
+//   ];
 
-  for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
-    var visibility = map.getLayoutProperty(id, "visibility");
-    if (id == "male_final_percentage_unknown" && visibility === "none") {
-      document.getElementById("male_final_percentage_unknown").style.display =
-        "none";
-    } else if (
-      id == "male_final_percentage_unknown" &&
-      visibility === "visible"
-    ) {
-      document.getElementById("male_final_percentage_unknown").style.display =
-        "initial";
-    }
-    if (id == "female_final_percentage_unknown" && visibility === "none") {
-      document.getElementById("female_final_percentage_unknown").style.display =
-        "none";
-    } else if (
-      id == "female_final_percentage_unknown" &&
-      visibility === "visible"
-    ) {
-      document.getElementById("female_final_percentage_unknown").style.display =
-        "initial";
-    }
-    if (id == "priv_female_final_percentage_unknown" && visibility === "none") {
-      document.getElementById(
-        "priv_female_final_percentage_unknown"
-      ).style.display = "none";
-    } else if (
-      id == "priv_female_final_percentage_unknown" &&
-      visibility === "visible"
-    ) {
-      document.getElementById(
-        "priv_female_final_percentage_unknown"
-      ).style.display = "initial";
-    }
-    if (id == "pub_female_final_percentage_unknown" && visibility === "none") {
-      document.getElementById(
-        "pub_female_final_percentage_unknown"
-      ).style.display = "none";
-    } else if (
-      id == "pub_female_final_percentage_unknown" &&
-      visibility === "visible"
-    ) {
-      document.getElementById(
-        "pub_female_final_percentage_unknown"
-      ).style.display = "initial";
-    }
-  }
-});
+//   for (var i = 0; i < toggleableLayerIds.length; i++) {
+//     var id = toggleableLayerIds[i];
+//     var visibility = map.getLayoutProperty(id, "visibility");
+//     if (id == "male_final_percentage_unknown" && visibility === "none") {
+//       document.getElementById("male_final_percentage_unknown").style.display =
+//         "none";
+//     } else if (
+//       id == "male_final_percentage_unknown" &&
+//       visibility === "visible"
+//     ) {
+//       document.getElementById("male_final_percentage_unknown").style.display =
+//         "initial";
+//     }
+//     if (id == "female_final_percentage_unknown" && visibility === "none") {
+//       document.getElementById("female_final_percentage_unknown").style.display =
+//         "none";
+//     } else if (
+//       id == "female_final_percentage_unknown" &&
+//       visibility === "visible"
+//     ) {
+//       document.getElementById("female_final_percentage_unknown").style.display =
+//         "initial";
+//     }
+//     if (id == "priv_female_final_percentage_unknown" && visibility === "none") {
+//       document.getElementById(
+//         "priv_female_final_percentage_unknown"
+//       ).style.display = "none";
+//     } else if (
+//       id == "priv_female_final_percentage_unknown" &&
+//       visibility === "visible"
+//     ) {
+//       document.getElementById(
+//         "priv_female_final_percentage_unknown"
+//       ).style.display = "initial";
+//     }
+//     if (id == "pub_female_final_percentage_unknown" && visibility === "none") {
+//       document.getElementById(
+//         "pub_female_final_percentage_unknown"
+//       ).style.display = "none";
+//     } else if (
+//       id == "pub_female_final_percentage_unknown" &&
+//       visibility === "visible"
+//     ) {
+//       document.getElementById(
+//         "pub_female_final_percentage_unknown"
+//       ).style.display = "initial";
+//     }
+//   }
+// });
 
 function createLegend() {
   //LEGEND TEXT
