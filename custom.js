@@ -17,7 +17,7 @@ const map = new mapboxgl.Map({
 map.on("load", () => {
   //Hide all presentation layers
   //This demo uses three specific layers. I want to hide them initially so I can reveal them piece meal.
-  map.setLayoutProperty("Percentage of Unknown Characters", "visibility", "none");
+  //map.setLayoutProperty("Percentage of Unknown Characters", "visibility", "none");
   map.setLayoutProperty("Percentage of Unknown Male Characters", "visibility", "none");
   map.setLayoutProperty(
     "Percentage of Unknown Female Characters",
