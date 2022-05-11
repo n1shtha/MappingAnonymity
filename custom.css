@@ -36,13 +36,15 @@ width: 100%;
 }
 
 .map-overlay .map-overlay-inner {
-    background-color: #fff;
-    box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    width: 50%;
+  background-color: #fff;
+  box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  width: 25%;
+  margin-left: 25%;
+  margin-top: 75%
 }
 
 .map-overlay {
