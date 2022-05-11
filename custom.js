@@ -312,7 +312,7 @@ map.on("mousemove", function (e) {
       "Location name: " +
       info[0].properties.location_name +
       "</p><p>" +
-      "Page number:" +
+      "Page number: " +
       info[0].properties.start_page_event +
       "</p>";
   } else {
