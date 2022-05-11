@@ -159,6 +159,11 @@ margin-bottom: 400px;
     text-align: center;
 }
 
+#menu a::after{
+  content: "\a";
+  white-space: pre;
+}
+
 #menu a:last-child {
     border: none;
 }
