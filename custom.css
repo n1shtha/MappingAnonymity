@@ -127,13 +127,13 @@ margin-bottom: 400px;
 }
 
 #infobox {
-  position: absolute;
+  position: sticky;
   height: fit-content;
   box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
   border-radius: 5px;
   min-height: 100px;
   padding: 10px;
-  margin-left: 449px;
+  margin-left: 149px;
   width: 250px;
 }
 
