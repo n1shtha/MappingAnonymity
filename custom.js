@@ -296,7 +296,7 @@ function createSlider() {
 
 map.on("mousemove", function (e) {
   var info = map.queryRenderedFeatures(e.point, {
-    layers: ["Percentage of Unknown Characters"],
+    layers: ["final-percentage-unknown-30pov8"],
   });
 
   if (info.length > 0) {
