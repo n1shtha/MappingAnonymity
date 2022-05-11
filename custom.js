@@ -17,7 +17,11 @@ const map = new mapboxgl.Map({
 map.on("load", () => {
   //Hide all presentation layers
   //This demo uses three specific layers. I want to hide them initially so I can reveal them piece meal.
-  map.setLayoutProperty("Percentage of Unknown Characters", "visibility", "none");
+  map.setLayoutProperty(
+    "Percentage of Unknown Characters",
+    "visibility",
+    "none"
+  );
   map.setLayoutProperty(
     "Percentage of Unknown Male Characters",
     "visibility",
@@ -35,6 +39,16 @@ map.on("load", () => {
   );
   map.setLayoutProperty(
     "Percentage of Unknown Female Characters in Public Spaces",
+    "visibility",
+    "none"
+  );
+  map.setLayoutProperty(
+    "Percentage of Unknown Male Characters in Public Spaces",
+    "visibility",
+    "none"
+  );
+  map.setLayoutProperty(
+    "Percentage of Unknown Male Characters in Public Spaces",
     "visibility",
     "none"
   );
@@ -53,6 +67,8 @@ function createMenu() {
   // Read in all the layers you want to toggle
   var toggleableLayerIds = [
     "Percentage of Unknown Male Characters",
+    "Percentage of Unknown Male Characters in Private Spaces",
+    "Percentage of Unknown Male Characters in Public Spaces",
     "Percentage of Unknown Female Characters",
     "Percentage of Unknown Female Characters in Private Spaces",
     "Percentage of Unknown Female Characters in Public Spaces",
@@ -60,10 +76,12 @@ function createMenu() {
 
   //These are the names for the layers that will appear on the menu
   var layerNames = [
-    "Unnamed Male Characters in Religious Conflict",
-    "Unnamed Female Characters in Religious Conflict",
-    "Unnamed Female Characters in Religious Conflict in Private Spaces",
-    "Unnamed Female Characters in Religious Conflict in Public Spaces",
+    "Males",
+    "Males in Private Spaces",
+    "Males in Public Spaces",
+    "Females",
+    "Females in Private Spaces",
+    "Females in Public Spaces",
   ];
 
   //Loop that generates a menu item for each layer in the above array.
@@ -102,6 +120,8 @@ function createMenu() {
 map.on("idle", () => {
   var toggleableLayerIds = [
     "Percentage of Unknown Male Characters",
+    "Percentage of Unknown Male Characters in Private Spaces",
+    "Percentage of Unknown Male Characters in Public Spaces",
     "Percentage of Unknown Female Characters",
     "Percentage of Unknown Female Characters in Private Spaces",
     "Percentage of Unknown Female Characters in Public Spaces",
@@ -285,7 +305,7 @@ const chapters = {
   },
   part_5: {
     bearing: 0,
-    center: [76.50, 30.43],
+    center: [76.5, 30.43],
     zoom: 11,
     speed: 1,
   },
