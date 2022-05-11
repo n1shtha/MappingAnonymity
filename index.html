@@ -24,11 +24,26 @@
 
 <div id='map'></div>
   
+<div id="menu">
+  <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
+  <!-- See a list of Mapbox-hosted public styles at -->
+  <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+  <label for="satellite-v9">males</label>
+  <input id="light-v10" type="radio" name="rtoggle" value="light">
+  <label for="light-v10">males in private spaces</label>
+  <input id="dark-v10" type="radio" name="rtoggle" value="dark">
+  <label for="dark-v10">males in public spaces</label>
+  <input id="streets-v11" type="radio" name="rtoggle" value="streets">
+  <label for="streets-v11">females</label>
+  <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
+  <label for="outdoors-v11">females in private spaces</label>
+  <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
+  <label for="outdoors-v11">females in public spaces</label>
+</div>
+  
 <!-- This creates space for the legend -->
 <div class='map-overlay' id='legend'></div>
-  
-<nav id="menu"></nav>
-  
+ 
 <!-- This creates space for the slider -->
 <div id='console'>
   <h3>Slider for Partition Texts</h3>
