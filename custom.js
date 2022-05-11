@@ -6,7 +6,7 @@ mapboxgl.accessToken =
 //Set the initial map view
 const map = new mapboxgl.Map({
   container: "map", // container ID
-  style: "mapbox://styles/ilamanish/cl2ysfeie000u15ntw58pgqnb", // style URL
+  style: "mapbox://styles/ilamanish/cl31ode73001w14pi8htaefck", // style URL
   center: [77.0688997, 20.5272803], // starting position [lng, lat]
   zoom: 4, // starting zoom
   bearing: 0, //controls the left-right rotation of the map in degrees
@@ -58,10 +58,12 @@ map.on("load", () => {
 
   //to reduce clutter, the steps for creating a legend, slider, and menu have all been turned into functions.
   createLegend();
-  createSlider();
-  createMenu();
+  // createSlider();
+  // createMenu();
 });
 
+/**
+ 
 function createMenu() {
   // MENU For selecting layers
   // Read in all the layers you want to toggle
@@ -115,8 +117,12 @@ function createMenu() {
   }
 }
 
+
+ */
+
 // //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
 
+/** 
 map.on("idle", () => {
   var toggleableLayerIds = [
     "Percentage of Unknown Male Characters",
@@ -209,6 +215,8 @@ map.on("idle", () => {
   }
 });
 
+*/
+
 function createLegend() {
   //LEGEND TEXT
   //the var layers array sets the text that will show up in the legend. you can enter any value here it is just text. Make sure that the legend values correspond to the ones you set in Mapbox.
@@ -237,6 +245,7 @@ function createLegend() {
 }
 //LEGEND CODE
 
+/** 
 function createSlider() {
   //Set the initial view at the first value. In this case, 1 for Pre-Partition.
   map.setFilter("temporality_count_sequence_number", [
@@ -277,6 +286,7 @@ function createSlider() {
     document.getElementById("temporality").innerText = label[step - 1]; // + ampm;
   });
 }
+*/
 
 const chapters = {
   part_1: {
@@ -356,3 +366,4 @@ window.onscroll = () => {
     }
   }
 };
+
