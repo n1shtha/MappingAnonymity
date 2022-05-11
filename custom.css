@@ -124,7 +124,7 @@ margin-bottom: 400px;
   font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-#infobox {
+/* #infobox {
   top: 0;
   height: fit-content;
   box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
@@ -134,7 +134,7 @@ margin-bottom: 400px;
   margin-top: 5px;
   margin-left: 5px;
   width: 250px;
-}
+} */
 
 #menu {
     background: #fff;
