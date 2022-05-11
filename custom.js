@@ -296,7 +296,7 @@ function createSlider() {
 
 map.on("mousemove", function (e) {
   var info = map.queryRenderedFeatures(e.point, {
-    layers: ["final-percentage-unknown-30pov8"],
+    layers: ["final-percentage-unknown-30pov8", "male-final-percentage-unknown-7eaf59", "priv-male-final-percentage-un-bvgpic", "pub-male-final-percentage-unk-97nefr", "female-final-percentage-unkno-39670o", "priv-female-final-percentage-9goxlo", "pub-female-final-percentage-u-9ylgmg"],
   });
 
   if (info.length > 0) {
