@@ -311,6 +311,8 @@ map.on("mousemove", function (e) {
       "</p><p>" +
       "Location name: " +
       info[0].properties.location_name +
+      "</p><p>" +
+      info[0].properties.start_page_event +
       "</p>";
   } else {
     document.getElementById("infobox_content").innerHTML =
