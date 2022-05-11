@@ -317,7 +317,7 @@ map.on("mousemove", function (e) {
       "</p>";
   } else {
     document.getElementById("infobox_content").innerHTML =
-      "<p>Hover over an area</p>";
+      "<p>Select 'All' and hover over an area.</p>";
   }
 });
 
