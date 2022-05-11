@@ -106,8 +106,8 @@ margin-bottom: 400px;
 }
 
 #legend {
-  position: sticky
-  padding: 10px;
+  position: sticky;
+/*   padding: 10px; */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   line-height: 18px;
   height: auto;
@@ -132,7 +132,7 @@ margin-bottom: 400px;
   box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
   border-radius: 5px;
   min-height: 100px;
-  padding: 10px;
+/*   padding: 10px; */
   margin-left: 449px;
   width: 250px;
 }
