@@ -127,7 +127,7 @@ margin-bottom: 400px;
 }
 
 #infobox {
-  position: absolute;
+  position: sticky;
   height: fit-content;
   box-shadow:0 2px 3px rgba(0, 0, 0, 0.20);
   border-radius: 5px;
