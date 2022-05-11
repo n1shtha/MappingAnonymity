@@ -124,8 +124,6 @@ function createMenu() {
     layers.appendChild(link);
   }
 }
-
-
  */
 
 // //This is a lazy function to hide and show menus relative to the layers. It waits for any change in the map rendering and then checks to see what menu items are active and turns on the infobox, slider, and legend. Normally, you would build this logic into the click event handler for each button.
@@ -296,6 +294,30 @@ function createSlider() {
 }
 */
 
+map.on("mousemove", function (e) {
+  var info = map.queryRenderedFeatures(e.point, {
+    layers: ["Percentage of Unknown Characters"],
+  });
+
+  if (info.length > 0) {
+    document.getElementById("infobox_content").innerHTML =
+      "<h5>" +
+      "Percentage of Unknown Characters: " +
+      info[0].properties.percentage_unknown +
+      "</h5>" +
+      "<p>" +
+      "Text title: " +
+      info[0].properties.text_title +
+      "</p><p>" +
+      "Location name: " +
+      info[0].properties.location_name +
+      "</p>";
+  } else {
+    document.getElementById("infobox_content").innerHTML =
+      "<p>Hover over an area</p>";
+  }
+});
+
 const chapters = {
   part_1: {
     bearing: 0,
@@ -374,5 +396,6 @@ window.onscroll = () => {
     }
   }
 };
+
 
 
