@@ -47,6 +47,7 @@ width: 100%;
 
 .map-overlay {
   position: absolute;
+  float: left
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.75);
