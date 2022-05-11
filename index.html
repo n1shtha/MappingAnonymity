@@ -40,26 +40,6 @@
   <input id="cl31o5s0y004014mmn5w4q9xc" type="radio" name="rtoggle" value="females in public spaces">
   <label for="cl31o5s0y004014mmn5w4q9xc">females in public spaces</label>
 </div>
-
-<script>
-  mapboxgl.accessToken = "pk.eyJ1IjoiaWxhbWFuaXNoIiwiYSI6ImNsMXQ4eDliMzB6N3kzb3FxbzY3ZmN5bDYifQ.swLACYH2fKaTe93_6hQ5sg";
-  const map = new mapboxgl.Map({
-    container: 'map',
-    style: "mapbox://styles/ilamanish/cl31ode73001w14pi8htaefck",
-    center: [77.0688997, 20.5272803],
-    zoom: 7
-  });
-
-  const layerList = document.getElementById('menu');
-  const inputs = layerList.getElementsByTagName('input');
-
-  for (const input of inputs) {
-    input.onclick = (layer) => {
-      const layerId = layer.target.id;
-      map.setStyle('mapbox://styles/ilamanish/' + layerId);
-    };
-  }
-</script>
   
 <!-- This creates space for the legend -->
 <div class='map-overlay' id='legend'></div>
