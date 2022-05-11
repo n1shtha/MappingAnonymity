@@ -2,16 +2,24 @@
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaWxhbWFuaXNoIiwiYSI6ImNsMXQ4eDliMzB6N3kzb3FxbzY3ZmN5bDYifQ.swLACYH2fKaTe93_6hQ5sg";
-
-//Set the initial map view
 const map = new mapboxgl.Map({
-  container: "map", // container ID
-  style: "mapbox://styles/ilamanish/cl31ode73001w14pi8htaefck", // style URL
-  center: [77.0688997, 20.5272803], // starting position [lng, lat]
-  zoom: 4, // starting zoom
-  bearing: 0, //controls the left-right rotation of the map in degrees
-  pitch: 0, //controls the up-down rotation of the map.
+  container: "map",
+  style: "mapbox://styles/ilamanish/cl31ode73001w14pi8htaefck",
+  center: [77.0688997, 20.5272803],
+  zoom: 4,
+  bearing: 0,
+  pitch: 0,
 });
+
+const layerList = document.getElementById("menu");
+const inputs = layerList.getElementsByTagName("input");
+
+for (const input of inputs) {
+  input.onclick = (layer) => {
+    const layerId = layer.target.id;
+    map.setStyle("mapbox://styles/ilamanish/" + layerId);
+  };
+}
 
 //This is all the stuff that runs on the first load of the map.
 map.on("load", () => {
@@ -366,4 +374,5 @@ window.onscroll = () => {
     }
   }
 };
+
 
