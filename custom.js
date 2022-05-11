@@ -6,7 +6,7 @@ mapboxgl.accessToken =
 //Set the initial map view
 const map = new mapboxgl.Map({
   container: "map", // container ID
-  style: "mapbox://styles/ilamanish/cl2r6nsvb000c14p1x9wtvzwh", // style URL
+  style: "mapbox://styles/ilamanish/cl2ysfeie000u15ntw58pgqnb", // style URL
   center: [77.0688997, 20.5272803], // starting position [lng, lat]
   zoom: 4, // starting zoom
   bearing: 0, //controls the left-right rotation of the map in degrees
