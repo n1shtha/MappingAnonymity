@@ -226,7 +226,7 @@ map.on("idle", () => {
 function createLegend() {
   //LEGEND TEXT
   //the var layers array sets the text that will show up in the legend. you can enter any value here it is just text. Make sure that the legend values correspond to the ones you set in Mapbox.
-  var layers = ["Male", "Female", "Other"];
+  var layers = ["Male", "Female", "Unknown"];
 
   //LEGEND COLORS
   //Set the corresponding LEGEND colors using HEX the easiest way to do this is by setting your mapcolors in Mapbox using ColorBrewer (colorbrewer2.org). Then copy the exact same hex value to the array below. Remember that each label above should correspond to a color. If the number of items in layers does not match the number of values in colors you will get an error.
