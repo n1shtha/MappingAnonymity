@@ -302,7 +302,7 @@ map.on("mousemove", function (e) {
   if (info.length > 0) {
     document.getElementById("infobox_content").innerHTML =
       "<h5>" +
-      "Percentage of Unknown Characters: " +
+      "Percentage of Unnamed Characters: " +
       info[0].properties.percentage_unknown +
       "</h5>" +
       "<p>" +
